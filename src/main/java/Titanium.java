@@ -13,6 +13,7 @@ public class Titanium {
 
         S2Coordinator s2Coordinator = S2Coordinator.setup()
                 .loadSettings(args)
+                .setRealtime(true)
                 .setParticipants(
                         S2Coordinator.createParticipant(Race.TERRAN, new TerranRushBot()),
                         S2Coordinator.createComputer(Race.ZERG, Difficulty.MEDIUM))
@@ -20,6 +21,9 @@ public class Titanium {
 
         s2Coordinator.startGame(LocalMap.of(Paths.get("D:\\Programs\\StarCraft II\\Maps\\Ladder2017Season1\\AbyssalReefLE.SC2Map")));
         //s2Coordinator.startGame(BattlenetMap.of("AbyssalReefLE"));
+
+
+
 
         while (s2Coordinator.update()) {
 
