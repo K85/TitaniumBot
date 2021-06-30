@@ -14,6 +14,12 @@
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.github.ocraft/ocraft-s2client-test -->
+        <dependency>
+            <groupId>com.github.ocraft</groupId>
+            <artifactId>ocraft-s2client-bot</artifactId>
+            <version>0.4.7</version>
+        </dependency>
 
     </dependencies>
 
